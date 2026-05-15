@@ -2,8 +2,9 @@
 import expenses from './expense-data.js';
 
 // 2. grab relevant DOM elements
-const expenseContainer = document.getElementById('expense-container')
-const searchTerm = document.getElementById('searchbox')
+const expenseContainer = document.getElementById('expense-container');
+const searchTerm = document.getElementById('searchbox');
+const expenseForm = document.getElementById('expense-form-add');
 
 // 3. render out data into a grid of cards
 function renderExpenses(expenseData) {
@@ -36,3 +37,14 @@ function renderExpenses(expenseData) {
 
 // 4. call the function to actually do the render
 renderExpenses(expenses);
+
+
+// 5. [skeleton]: form submission:
+function submitExpense() {
+  // ...
+}
+
+expenseForm.addEventListener("submit", submitExpense);
+
+
+
